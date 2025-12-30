@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.button{
+  color: white;
+  background-color: #f1b516;
+  margin-top: 1rem;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+
+}
+.button:active {
+  background-color: #e3a806;
+}

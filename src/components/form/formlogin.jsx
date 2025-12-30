@@ -1,0 +1,51 @@
+import { useState } from "react";
+import Input from "../ui/input/index";
+import Button from"../ui/butom";
+import styles from "./styles.module.css";
+
+
+
+
+export default function FormLogin(){
+    const [email, setEmail] = useState('');
+    const [pass, setPass] = useState('');
+
+
+    function enviar(e){
+        e.preventDefault();
+        console.log({ email, pass});
+    }
+    return(
+        <form className={ styles.container} onSubmit={enviar}>
+            
+            <label className={ styles.label}>login</label>
+           
+            <Input 
+            label="E-mail"
+            type="email"
+            value={email}
+            onChange={(e)=> setEmail(e.target.value)}
+            placeholder=""
+            />
+
+            <Input 
+            label="Senha"
+            type="password"
+            value={pass}
+            onChange={(e)=> setPass(e.target.value)}
+            placeholder=""
+            />
+             <label className={ styles.reset}>Esqueceu a Senha ?</label>
+            <Button
+            label='Entrar'
+            onClick={enviar}
+            width= '170px'
+            height='40px'
+            borderRadius='10px'
+             />
+        </form>
+    )
+
+
+
+}
