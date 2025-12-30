@@ -41,7 +41,7 @@
   color: white;
 }
 .icon{
-  font-weight: 500;
-  size: 18px;
+  font-size: 18px;
   color: white;
+  cursor: pointer;
 }
