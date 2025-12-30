@@ -22,13 +22,14 @@
     width: 100%;
     height :3vh;
     border:none;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
 }
 .input:focus {
   outline: none;
 }
 .container_input{
     border-bottom: 2px solid #f1b516;
+    margin-bottom: 0.5rem;
     background-color: transparent;
     width: 100%;
     display: flex;
@@ -36,8 +37,8 @@
 }
 .label {
   font-weight: 500;
-  margin-bottom: -0.5rem;
-  font-size: 1.2rem;
+  margin-bottom: -0.2rem;
+  font-size: 1.3rem;
   color: white;
 }
 .icon{
