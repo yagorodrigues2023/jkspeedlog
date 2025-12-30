@@ -1,20 +1,17 @@
-
 import React from 'react';
-import { BrowserRouter as Router, Route , Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+
 import Login from '../login';
-//import Home
 import ResetPass from '../resetpass';
 
-export default function App(){
-    
-    return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Login />} />
-                <Route path="/reset-password" element={<ResetPass />} />
-                <Route path="*" element={<Navigate to="/" />} />
-            </Routes>
-        </Router>
-
-    )   
+export default function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/reset-password" element={<ResetPass />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </Router>
+  );
 }
