@@ -6,7 +6,9 @@ import styles from "./styles.module.css";
 
 export default function FormResetPass(){
     const navigate = useNavigate()
-    const {email, setEmail} = useState('')
+    const [email, setEmail]= useState('')
+
+  
     
     function reset(e){
         e.preventDefault();

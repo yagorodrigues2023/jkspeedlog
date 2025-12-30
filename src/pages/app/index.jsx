@@ -12,6 +12,7 @@ export default function App(){
             <Routes>
                 <Route path="/" element={<Login />} />
                 <Route path="/reset-password" element={<ResetPass />} />
+                <Route path="*" element={<Navigate to="/" />} />
             </Routes>
         </Router>
 
