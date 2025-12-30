@@ -8,6 +8,7 @@
 }
 
 .container{
+    overflow: hidden; 
     background-color: #101445;
     display: flex;
     align-items: center;
