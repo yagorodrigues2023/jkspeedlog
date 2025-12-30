@@ -8,7 +8,7 @@ export default function Login(){
     
     return (
     <div className={`${styles.container} ${styles.no_select}`}>
-        <img src={logo} className={styles.logo} width='100%' style={{marginBottom: '5rem', marginTop: '2rem'}} />
+        <img src={logo} className={styles.logo} width='100%' style={{marginBottom: '1rem', marginTop: '3rem'}} />
         <FormLogin  />
     </div>
     )   
