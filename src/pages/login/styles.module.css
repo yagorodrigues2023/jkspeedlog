@@ -1,27 +1,21 @@
-@charset "UTF-8";
-
-
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    height: 100%;
-    overflow: hidden; 
+html, body {
+  height: 100%;       /* garante que o body e html ocupem toda a tela */
+  overflow: hidden;   /* impede scroll da página */
 }
 
-.container{
-    background-color: #101445;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
-    
+.container {
+  background-color: #101445;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* 'start' funciona, mas 'flex-start' é padrão */
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;      /* inclui padding na altura */
 }
