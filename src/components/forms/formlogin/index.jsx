@@ -1,12 +1,16 @@
 import { useState } from "react";
-import Input from "../ui/input/index";
-import Button from"../ui/butom";
+import { useNavigate } from "react-router-dom";
+import Input from "../../ui/input/index";
+import Button from"../../ui/butom";
 import styles from "./styles.module.css";
 
 
 
 
 export default function FormLogin(){
+
+    const navigate = useNavigate();
+
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
 
@@ -16,7 +20,7 @@ export default function FormLogin(){
         console.log({ email, pass});
     }
     return(
-        <form className={ styles.container} onSubmit={enviar}>
+        <form className={styles.container} onSubmit={enviar}>
             
             <label className={ styles.label}>Login</label>
            
@@ -35,7 +39,7 @@ export default function FormLogin(){
             onChange={(e)=> setPass(e.target.value)}
             placeholder=""
             />
-             <label className={ styles.reset}>Esqueceu a Senha ?</label>
+             <label onClick={() => navigate("/reset-password")} className={ styles.reset}>Esqueceu a Senha ? Clique aqui</label>
             <Button
             label='Entrar'
             onClick={enviar}
