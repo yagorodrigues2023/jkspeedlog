@@ -18,7 +18,7 @@ export default function FormLogin(){
     return(
         <form className={ styles.container} onSubmit={enviar}>
             
-            <label className={ styles.label}>login</label>
+            <label className={ styles.label}>Login</label>
            
             <Input 
             label="E-mail"
@@ -39,8 +39,8 @@ export default function FormLogin(){
             <Button
             label='Entrar'
             onClick={enviar}
-            width= '170px'
-            height='40px'
+            width= '250px'
+            height='50px'
             borderRadius='10px'
              />
         </form>
