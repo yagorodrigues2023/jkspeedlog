@@ -7,7 +7,7 @@ import styles from "./styles.module.css";
 export default function Login(){
     
     return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${styles.no_select}`}>
         <img src={logo} width='100%' style={styles.img} />
         <FormLogin  />
     </div>
