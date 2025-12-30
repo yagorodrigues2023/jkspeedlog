@@ -8,7 +8,7 @@ export default function ResetPass(){
     
     return (
     <div className={`${styles.container} ${styles.no_select}`}>
-        <img src={logo} className={styles.logo} width='100%' style={{marginBottom: '5rem', marginTop: '2rem'}} />
+        <img src={logo} className={styles.logo} width='100%' style={{marginBottom: '3rem', marginTop: '2rem'}} />
         <FormResetPass  />
     </div>
     )   
