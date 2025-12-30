@@ -5,8 +5,6 @@ import Login from './pages/login/index'
 
 
 
-
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Login />
