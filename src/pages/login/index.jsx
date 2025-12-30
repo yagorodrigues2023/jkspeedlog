@@ -8,7 +8,7 @@ export default function Login(){
     
     return (
     <div className={styles.container}>
-        <img src={logo} width='100%' style={{marginBottom: '5rem', marginTop: '2rem'}} />
+        <img src={logo} width='100%' style={styles.img} />
         <FormLogin  />
     </div>
     )   

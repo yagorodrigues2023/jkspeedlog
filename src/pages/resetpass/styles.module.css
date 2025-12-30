@@ -8,6 +8,12 @@ html, body {
   height: 100%;       /* garante que o body e html ocupem toda a tela */
   overflow: hidden;   /* impede scroll da página */
 }
+.no-select {
+  user-select: none;      
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent; 
+}
 
 .container {
   background-color: #101445;
