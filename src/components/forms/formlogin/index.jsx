@@ -18,6 +18,7 @@ export default function FormLogin(){
     function enviar(e){
         e.preventDefault();
         console.log({ email, pass});
+        navigate("/home")
     }
     return(
         <form className={styles.container} onSubmit={enviar}>

@@ -1,12 +1,16 @@
+import styles from "./styles.module.css"
+import Cards from "../../components/ui/cards"
+import logo from "../../img/logoClaro.png"
 
-function Home(){
+export default function Home(){
     
     return(
-        <div>
-            <h1>
-                Home
-            </h1>
+        <div className={styles.div}>
+            <Cards
+            img={logo}
+            nome = 'juan dos santos' 
+            funcao = "MOTORISTA" />
+
         </div>
     )
 }
-export default Home 

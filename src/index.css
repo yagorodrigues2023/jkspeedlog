@@ -2,17 +2,19 @@
 
 :root {
   --corTexto: #000000;
+  --corTextoSecundaria: #969696;
   --background: #FDFAFC;
   --corPrimaria: #D6A010;
-  --corSecundaria: #A3A2A2;
+  --corSecundaria: #FDFAFC;;
   --corTextoBotao: #FDFAFC;
   --active: #e3a806;
-  --activeTexto: rgb(202, 202, 202);
+  --activeTexto: rgb(202, 202, 202); 
 }
 
 [data-theme="dark"] {
-  --background: #020711;
+  --background: #04102b;
   --corTexto: #FDFAFC;
+  --corTextoSecundaria: #969696;
   --corPrimaria: #D6A010;
   --corSecundaria: #252628;
   --corTextoBotao: #FDFAFC;
