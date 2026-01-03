@@ -10,7 +10,8 @@
     height: 100vh;
     
 }
-.card{ 
+.card{
+    margin-top: 1rem ;
     padding: 1rem;
     display: flex;
     justify-content: left;

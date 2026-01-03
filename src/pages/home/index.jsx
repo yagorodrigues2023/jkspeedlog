@@ -10,6 +10,10 @@ export default function Home(){
             img={logo}
             nome = 'juan dos santos' 
             funcao = "MOTORISTA" />
+                        <Cards
+            img={logo}
+            nome = 'juan dos santos' 
+            funcao = "MOTORISTA" />
 
         </div>
     )
