@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 7vh;
+}
+
+/* Foto do funcionário */
+.img {
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    width: 52px;
+    height: 53px;
+    object-fit: cover;
+}
+.container{
+    width: 100%;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+.containerCirculo{
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    width: 52px;
+    height: 53px;
+    background-color: var(--corSecundaria);
+}
+.containerDireita{
+    margin-left: 55%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+
+}

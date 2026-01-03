@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+
+/* Container dos cards - rolagem horizontal */
+.divCards {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem;
+    width: 100%;
+    scroll-behavior: smooth;
+ 
+}
+
+.divCards::-webkit-scrollbar {
+    height: 0px;
+}
+
+.divCards::-webkit-scrollbar-thumb {
+    background: transparent
+
+}
+
+/* Card individual */
+.card {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    min-width: 200px;
+    background-color: var(--corSecundaria);
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+}
+
+/* Container interno do conteúdo do card */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Caixa com função do funcionário */
+.cardFuncao {
+    background-color: var(--corPrimaria);
+    color: var(--corSecundaria);
+    margin-top: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Foto do funcionário */
+.img {
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    width: 52px;
+    height: 53px;
+    object-fit: cover;
+}
+
+/* Nome do funcionário */
+.nome {
+    text-align: center;
+    color: var(--corTexto);
+    font-size: 18px;
+    font-weight: 500;
+}

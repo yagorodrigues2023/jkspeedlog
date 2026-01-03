@@ -3,9 +3,9 @@
 .div {
         background-color: var(--background);
         display: flex;
-        justify-content:center;
-        align-items: start;
-        flex-direction: row;
+        justify-content:start;
+        align-items: center;
+        flex-direction: column;
         width: 100vw;
         height: 100vh;
 
