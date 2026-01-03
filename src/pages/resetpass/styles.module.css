@@ -21,7 +21,7 @@ html, body {
 
 
 .container {
-  background-color: #101445;
+  background-color: var(--background);
   display: flex;
   align-items: center;
   justify-content: flex-start; /* 'start' funciona, mas 'flex-start' é padrão */

@@ -8,8 +8,8 @@
 
 
 .button{
-  color: white;
-  background-color: #f1b516;
+  color: var(--corTextoBotao);
+  background-color: var(--corPrimaria);
   margin-top: 1rem;
   font-size: 18px;
   font-weight: bold;
@@ -17,5 +17,5 @@
 
 }
 .button:active {
-  background-color: #e3a806;
+  background-color:var(--active)
 }

@@ -1,12 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 html, body {
-  height: 100%;       /* garante que o body e html ocupem toda a tela */
-  overflow: hidden;   /* impede scroll da página */
+  height: 100%;       
+  overflow: hidden;  
 }
 .no_select {
   user-select: none;      
@@ -15,7 +11,7 @@ html, body {
   -webkit-tap-highlight-color: transparent; 
 }
 .container {
-  background-color: #101445;
+  background-color: var(--background);
   display: flex;
   align-items: center;
   justify-content: flex-start; /* 'start' funciona, mas 'flex-start' é padrão */

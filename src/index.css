@@ -1,9 +1,28 @@
 @charset "UTF-8";
 
-*{
-font-family: 'Roboto', sans-serif;
-margin: 0;
-padding: 0; 
-box-sizing: border-box;
-background-color: #101445;
+:root {
+  --corTexto: #000000;
+  --background: #FDFAFC;
+  --corPrimaria: #D6A010;
+  --corSecundaria: #A3A2A2;
+  --corTextoBotao: #FDFAFC;
+  --active: #e3a806;
+  --activeTexto: rgb(202, 202, 202);
+}
+
+[data-theme="dark"] {
+  --background: #020711;
+  --corTexto: #FDFAFC;
+  --corPrimaria: #D6A010;
+  --corSecundaria: #252628;
+  --corTextoBotao: #FDFAFC;
+  --active: #b78704;
+  --activeTexto: rgba(202, 202, 202, 0.883);
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

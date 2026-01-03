@@ -1,14 +1,17 @@
 
 import FormResetPass from '../../components/forms/formreset';
-import logo from '../../img/logo.png';
+import logoEscuro from '../../img/logoEscuro.png';
+import logoClaro from '../../img/logoClaro.png';
 import styles from "./styles.module.css";
 
 
 export default function ResetPass(){
+    const isDark =
+    document.documentElement.getAttribute('data-theme') === 'dark';
     
     return (
     <div className={`${styles.container} ${styles.no_select}`}>
-        <img src={logo} className={styles.logo} width='100%' height='auto'  />
+        <img src={isDark ? logoEscuro : logoClaro}  className={styles.logo} width='100%' height='auto'  />
         <FormResetPass  />
     </div>
     )   
