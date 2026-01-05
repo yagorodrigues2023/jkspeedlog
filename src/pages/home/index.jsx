@@ -17,6 +17,8 @@ export default function Home() {
         <CardsPerfil perfil={logo}/>
         <Cardstopo />
         <CardPrincipal />
+        <label className="alinhamentoColumnEsquerda" 
+        style={{width: "90%", fontSize:"1.3rem", color:"var(--corTexto)", fontWeight:"500"}}>Fucionarios</label>
         <Cards funcionarios={funcionarios} />
     </div>
   );

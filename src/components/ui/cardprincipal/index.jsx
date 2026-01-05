@@ -41,12 +41,12 @@ export default function CardPrincipal({dados}) {
                 <div className= {`alinhamentoColumnEsquerda ${styles.labelGrafico}`}>
                     <label>Utima atualização</label>
                     <span className={`alinhamentoRowCentro`}>
-                        <label style={{color:"var(--corTexto)" ,marginTop: "0.5rem", fontSize:"1.2rem"}}>Hoje,</label>
+                        <label style={{color:"var(--corTexto)" ,marginTop: "0.5rem", fontSize:"1.2rem"}}>Hoje, </label>
                         <label style={{fontSize:"1rem"}}>{dados.hora}</label>
                      </span>
                 </div>                             
             </div>
-            <div className=" alinhamentoRowEsquerda " style={{width:"100%", marginTop:".5rem"}}><GraficoLinha />   </div>           
+            <div className=" alinhamentoRowEsquerda " style={{width:"100%", marginTop:"1rem"}}><GraficoLinha />   </div>           
         </div>
     )
 }
