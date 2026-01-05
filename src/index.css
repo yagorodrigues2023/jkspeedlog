@@ -2,7 +2,6 @@
 
 
 :root {
-  height: 100%;
   --shadow-card: 0 0 7px rgba(0, 0, 0, 0.2);
   --corTexto: #000000;
   --corTextoSecundaria: #969696;
@@ -31,6 +30,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html,
+body{
+  height: 100%;
 }
 .alinhamentoRowCentro{
     display: flex;

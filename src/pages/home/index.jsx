@@ -19,14 +19,14 @@ export default function Home() {
         <CardPrincipal />
         <span className={` ${styles.ver}`}>
           <label>Fucionarios</label>
-          <label style={{ fontSize:"0.8rem"}}>Ver todos</label>
+          <label style={{ fontSize:"0.9rem"}}>Ver todos</label>
         </span>
 
         <Cards funcionarios={funcionarios} />
 
         <span className={` ${styles.ver}`}>
           <label>Ultimas saidas</label>
-          <label style={{ fontSize:"0.8rem"}}>Ver todas</label>
+          <label style={{ fontSize:"0.9rem"}}>Ver todas</label>
         </span>        
     </div>
   );
