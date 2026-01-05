@@ -3,7 +3,7 @@
 .container{
     box-shadow: var(--shadow-card);
     width: 90%;
-    height: 25vh;
+    height: 32vh;
     background-color: var(--corSecundaria);
     border-radius: 20px;
 
@@ -21,7 +21,7 @@
     font-size: 1rem;
 }
 .cardIn label{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: left;
     color: var(--corTexto)
 }
@@ -33,6 +33,9 @@
 .icon {
     font-size: 1.5rem;
     color: var(--corPrimaria)
+}
+.icon:active{
+    color: var(--active)
 }
 .line{
     border-radius: 10px;
