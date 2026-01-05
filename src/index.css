@@ -20,7 +20,7 @@
   --corPrimaria: #D6A010;
   --corSecundaria: #252628;
   --corTextoBotao: #FDFAFC;
-  --active: #98730b;
+  --active: #ffc628;
   --activeTexto: rgba(202, 202, 202, 0.883);
 }
 
@@ -50,8 +50,8 @@
 }
 .alinhamentoRowEsquerda{
   display: flex;
-  justify-content: center;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: center;
   flex-direction: row;
 }
 .alinhamentoColumnEsquerda {

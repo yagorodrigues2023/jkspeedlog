@@ -12,3 +12,19 @@
         height: 100vh;
 
     }
+.funcionarios{
+
+        margin-left: 60%;
+        font-size: .8rem
+    }
+.funcionarios:active{
+
+        color:var(--activeTexto);
+}
+.ver{
+    margin-left: 53.5%;
+    font-size: .8rem
+}
+.ver:active {
+    color: var(--activeTexto);
+}

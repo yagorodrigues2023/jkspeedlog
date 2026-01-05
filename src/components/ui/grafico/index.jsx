@@ -17,7 +17,7 @@ const data = [
 
 export function GraficoLinha() {
   return (
-    <ResponsiveContainer width="90%" height={145}>
+    <ResponsiveContainer width="95%" height={145}>
       <LineChart
         data={data}
         margin={{ top: 10, right: 0, left: 0, bottom: 0 }}
@@ -30,7 +30,7 @@ export function GraficoLinha() {
 
         {/* Eixo Y colado à esquerda */}
         <YAxis
-        width={30}
+        width={50}
         tick={{ fontSize: ".8rem" }}
         tickFormatter={(value) => (value / 1000).toFixed(0)}
         unit="k"

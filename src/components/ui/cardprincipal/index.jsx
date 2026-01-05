@@ -29,7 +29,7 @@ export default function CardPrincipal({dados}) {
                     </span>
             </div>
             <span className={styles.line}></span>
-            <div className= {`alinhamentoRowEsquerda ${styles.cardGrafico}`}>
+            <div className= {`alinhamentoRowCentro ${styles.cardGrafico}`}>
                 <div className= {`alinhamentoColumnEsquerda ${styles.labelGrafico}`}>
                     <label>Total de saidas</label>
                     <label>{dados.total}</label>
@@ -40,8 +40,8 @@ export default function CardPrincipal({dados}) {
                 </div>
                 <div className= {`alinhamentoColumnEsquerda ${styles.labelGrafico}`}>
                     <label>Utima atualização</label>
-                    <span className={`alinhamentoRowCentro`}>
-                        <label style={{color:"var(--corTexto)" ,marginTop: "0.5rem", fontSize:"1.2rem"}}>Hoje, </label>
+                    <span styles={`alinhamentoColumnEsquerda ${styles.labelGrafico}`}>
+                        <label style={{color:"var(--corTexto)" ,marginTop: "0.5rem", fontSize:"1.2rem"}}>Hoje,</label>
                         <label style={{fontSize:"1rem"}}>{dados.hora}</label>
                      </span>
                 </div>                             
