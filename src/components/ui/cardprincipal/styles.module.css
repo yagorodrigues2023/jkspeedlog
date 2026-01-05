@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.container{
+    box-shadow: var(--shadow-card);
+    width: 90%;
+    height: 25vh;
+    background-color: var(--corSecundaria);
+    border-radius: 20px;
+
+}
+.top{
+    margin: 1rem;
+    width: 85%;
+    height: 15%;
+}
+.cardIn{
+    gap: 0.1rem;
+    width: 90%;
+}
+.cardIn label:first-of-type{
+    font-size: 1rem;
+}
+.cardIn label{
+    font-size: 1.1rem;
+    text-align: left;
+    color: var(--corTexto)
+}
+
+.top span:first-of-type{
+    width: 2rem ;
+    color: var(--corPrimaria)
+}
+.icon {
+    font-size: 1.5rem;
+    color: var(--corPrimaria)
+}
+.line{
+    border-radius: 10px;
+    width: 90%;
+    height: 0.05rem;
+    background-color: var(--corTextoSecundaria);
+}
+.cardGrafico{
+    margin-top: 0.5rem;
+    gap: 1rem;
+    width: 90%;
+}
+.labelGrafico{
+
+    width: 100%;
+}
+.labelGrafico label{
+    font-size: 1.2rem;
+    color: var(--corTexto);
+}
+.labelGrafico label:first-of-type{
+    color: var(--corTextoSecundaria);
+    font-size: 1rem;
+}

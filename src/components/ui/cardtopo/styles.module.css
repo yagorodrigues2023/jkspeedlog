@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.div {
+    margin-top: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    height: 7vh;
+    gap: 1rem;
+}
+      
+.cards{
+    box-shadow: var(--shadow-card);
+    border-radius: 10px;
+    background-color: var(--corSecundaria);
+    width: 40%;
+    height: 6vh;
+}    
+.divin{
+    gap: 0.3rem;
+    width: 100%;
+}
+.divinLabel{
+    font-size: 1rem ;
+    color: var(--corTexto);
+}
+.icon{ 
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--corPrimaria);
+}
+.divEsLabel{
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--corTextoSecundaria);
+}
+

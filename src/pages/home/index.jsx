@@ -1,7 +1,9 @@
 import styles from "./styles.module.css"
 import Cards from "../../components/ui/cardfuncao"
-import CardsFuncao from "../../components/ui/cardsuperior";
 import logo from "../../img/logoClaro.png"
+import Cardstopo from "../../components/ui/cardtopo";
+import CardsPerfil from "../../components/ui/cardsuperior";
+import CardPrincipal from "../../components/ui/cardprincipal";
 
 export default function Home() {
   const funcionarios = [
@@ -11,8 +13,10 @@ export default function Home() {
   ];
 
   return (
-    <div className={styles.div}>
-        <CardsFuncao perfil={logo}/>
+    <div className={` alinhamentoColumnTop ${styles.div}`}>
+        <CardsPerfil perfil={logo}/>
+        <Cardstopo />
+        <CardPrincipal />
         <Cards funcionarios={funcionarios} />
     </div>
   );

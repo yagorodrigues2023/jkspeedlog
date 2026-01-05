@@ -16,7 +16,7 @@ export default function FormResetPass(){
     }
 
     return(
-        <form className={styles.container} onSubmit={reset} >
+        <form className={` alinhamentoColumnCentro ${styles.container}`} onSubmit={reset} >
             <label className={styles.label}>Redefinir a senha</label>
             <Input
             label ="E-mail"

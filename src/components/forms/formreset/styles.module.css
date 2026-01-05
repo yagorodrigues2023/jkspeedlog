@@ -10,10 +10,6 @@
 .container{
     min-height: 30vh;
     width: 90vw ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 .label{
     margin-bottom: 1rem;

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 :root {
+  --shadow-card: 0 0 7px rgba(0, 0, 0, 0.2);
   --corTexto: #000000;
   --corTextoSecundaria: #969696;
   --background: #FDFAFC;
@@ -12,6 +13,7 @@
 }
 
 [data-theme="dark"] {
+  --shadow-card: none;
   --background: #04102b;
   --corTexto: #FDFAFC;
   --corTextoSecundaria: #969696;
@@ -28,3 +30,40 @@
   padding: 0;
   box-sizing: border-box;
 }
+.alinhamentoRowCentro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.alinhamentoColumnCentro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.alinhamentoRowTop{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+}
+.alinhamentoRowEsquerda{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+}
+.alinhamentoColumnEsquerda {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.alinhamentoColumnTop {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+

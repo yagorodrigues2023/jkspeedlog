@@ -21,7 +21,7 @@ export default function FormLogin(){
         navigate("/home")
     }
     return(
-        <form className={styles.container} onSubmit={enviar}>
+        <form className={` alinhamentoColumnCentro ${styles.container}`} onSubmit={enviar}>
             
             <label className={ styles.label}>Login</label>
            

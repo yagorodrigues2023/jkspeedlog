@@ -12,10 +12,6 @@ html, body {
 }
 .container {
   background-color: var(--background);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* 'start' funciona, mas 'flex-start' é padrão */
-  flex-direction: column;
   width: 100vw;
   height: 100vh;
   box-sizing: border-box;      /* inclui padding na altura */

@@ -11,10 +11,7 @@
     background-color: transparent;
     width: 90%;
     min-height :6vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+
 }
 .input{
     color: var(--corTexto);

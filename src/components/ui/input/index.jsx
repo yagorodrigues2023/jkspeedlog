@@ -9,7 +9,7 @@ export default function Input({label , type='text', value, onChange, placeholder
 
 
     return(
-        <div className={styles.container}>
+        <div className={`alinhamentoColumnEsquerda ${styles.container}`}>
             {label && <label className={styles.label} >{label}</label>}
             <div className={styles.container_input} >
             <input className={styles.input}
