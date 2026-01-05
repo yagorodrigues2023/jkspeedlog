@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
+
 :root {
+  height: 100%;
   --shadow-card: 0 0 7px rgba(0, 0, 0, 0.2);
   --corTexto: #000000;
   --corTextoSecundaria: #969696;
