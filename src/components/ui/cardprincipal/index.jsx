@@ -19,7 +19,7 @@ export default function CardPrincipal({dados}) {
             <div className= {` alinhamentoRowEsquerda ${styles.top}`} >
                 <div className= {`alinhamentoColumnEsquerda ${styles.cardIn}`}>
                     <label>Saldo total</label>
-                    <label> {!visivel ? dados.valor : "******" }</label>
+                    <label> R$: {!visivel ?  dados.valor : "******" }</label>
                 </div>
                 <span onClick={()=> setVisivel(!visivel)}> 
                     {!visivel ?
@@ -32,11 +32,11 @@ export default function CardPrincipal({dados}) {
             <div className= {`alinhamentoRowEsquerda ${styles.cardGrafico}`}>
                 <div className= {`alinhamentoColumnEsquerda ${styles.labelGrafico}`}>
                     <label>Total de saidas</label>
-                    <label> {dados.total}</label>
+                    <label>{dados.total}</label>
                 </div>
                 <div className= {`alinhamentoColumnEsquerda ${styles.labelGrafico}`}>
                     <label>Media de saidas</label>
-                    <label> R$:{dados.media}</label>
+                    <label>R$: {dados.media}</label>
                 </div>
                 <div className= {`alinhamentoColumnEsquerda ${styles.labelGrafico}`}>
                     <label>Utima atualização</label>
