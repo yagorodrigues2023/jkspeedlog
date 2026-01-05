@@ -18,7 +18,7 @@ const data = [
 export function GraficoLinha() {
   return (
     
-    <ResponsiveContainer width="95%" aspect={4 / 1}>
+    <ResponsiveContainer width="95%" aspect={5 / 1}>
       <LineChart
         data={data}
         margin={{ top: 10, right: 0, left: 0, bottom: 0 }}
