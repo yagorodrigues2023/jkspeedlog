@@ -10,21 +10,17 @@
         gap: 1rem;
         width: 100vw;
         height: 100vh;
-
     }
-.funcionarios{
 
-        margin-left: 60%;
-        font-size: .8rem
+.ver{    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        color: var(--corTexto);
+        font-weight:"500";
+        font-size: 1.1rem;
     }
-.funcionarios:active{
-
-        color:var(--activeTexto);
-}
-.ver{
-    margin-left: 53.5%;
-    font-size: .8rem
-}
-.ver:active {
+.ver label:active:last-of-type {
     color: var(--activeTexto);
 }

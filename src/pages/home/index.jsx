@@ -17,18 +17,16 @@ export default function Home() {
         <CardsPerfil perfil={logo}/>
         <Cardstopo />
         <CardPrincipal />
-        <span className={`alinhamentoRowEsquerda`}
-        style={{width: "90%", color:"var(--corTexto)", fontWeight:"500"}}>
+        <span className={` ${styles.ver}`}>
           <label>Fucionarios</label>
-          <label className={styles.funcionarios} >Ver todos</label>
+          <label style={{ fontSize:"0.8rem"}}>Ver todos</label>
         </span>
 
         <Cards funcionarios={funcionarios} />
 
-        <span className={`alinhamentoRowEsquerda`}
-        style={{width: "90%", color:"var(--corTexto)", fontWeight:"500"}}>
+        <span className={` ${styles.ver}`}>
           <label>Ultimas saidas</label>
-          <label className={styles.ver} >Ver todas</label>
+          <label style={{ fontSize:"0.8rem"}}>Ver todas</label>
         </span>        
     </div>
   );
