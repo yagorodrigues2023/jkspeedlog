@@ -18,7 +18,7 @@
         justify-content: space-between;
         width: 90%;
         color: var(--corTexto);
-        font-weight:"500";
+        font-weight:"600";
         font-size: 1.1rem;
     }
 .ver label:active:last-of-type {
