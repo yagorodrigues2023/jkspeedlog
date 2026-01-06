@@ -16,6 +16,7 @@
 }
 
 [data-theme="dark"] {
+  min-height: 100dvh;
   --shadow-card: none;
   --background: #04102b;
   --corTexto: #FDFAFC;
