@@ -32,6 +32,7 @@
   box-sizing: border-box;
 }
 #root{
+  background-color: var(--background);
   height: 100vh;
 }
 .alinhamentoRowCentro{
