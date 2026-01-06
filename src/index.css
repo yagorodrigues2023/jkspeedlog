@@ -31,7 +31,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+#root{
+  height: 100dvh;
+}
 .alinhamentoRowCentro{
     display: flex;
     justify-content: center;
