@@ -32,7 +32,7 @@
   box-sizing: border-box;
 }
 #root{
-  height: 100dvh;
+  height: 100vh;
 }
 .alinhamentoRowCentro{
     display: flex;
