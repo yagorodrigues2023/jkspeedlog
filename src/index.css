@@ -13,7 +13,7 @@
   --active: #ffbf0f;
   --activeTexto: rgb(202, 202, 202); 
 }
-body{
+html,body{
   width: 100vw;
   min-height: 100vh;
 }
