@@ -2,6 +2,9 @@
 
 
 :root {
+
+      background-color: var(--background);
+      height: 100vh;
   --shadow-card: 0 0 7px rgba(0, 0, 0, 0.2);
   --corTexto: #000000;
   --corTextoSecundaria: #969696;
@@ -31,10 +34,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-#root{
-  background-color: var(--background);
-  height: 100vh;
-}
+
 .alinhamentoRowCentro{
     display: flex;
     justify-content: center;
