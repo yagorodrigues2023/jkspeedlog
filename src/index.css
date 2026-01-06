@@ -3,7 +3,6 @@
 
 :root {
 
-      background-color: var(--background);
       height: 100vh;
   --shadow-card: 0 0 7px rgba(0, 0, 0, 0.2);
   --corTexto: #000000;
