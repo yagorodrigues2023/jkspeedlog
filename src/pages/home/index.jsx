@@ -5,6 +5,7 @@ import Cardstopo from "../../components/ui/cardtopo";
 import CardsPerfil from "../../components/ui/cardsuperior";
 import CardPrincipal from "../../components/ui/cardprincipal";
 import CardSaida from "../../components/ui/cardsaida";
+import BottomNav from "../../components/ui/navi";
 
 export default function Home() {
   const funcionarios = [
@@ -37,6 +38,7 @@ export default function Home() {
           <label style={{ fontSize:"0.9rem"}}>Ver todas</label>
         </span> 
         <CardSaida dados={dados} />    
+        <BottomNav/>
     </div>
   );
 }
