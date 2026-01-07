@@ -46,7 +46,7 @@ export default function CardPrincipal({dados}) {
                      </span>
                 </div>                             
             </div>
-            <div className=" alinhamentoRowEsquerda " style={{width:"100%", height:"10hv" ,margin:"1rem"}}><GraficoLinha />   </div>           
+            <div className=" alinhamentoRowEsquerda " style={{width:"100%", height:"10vh" ,margin:"1rem"}}><GraficoLinha />   </div>           
         </div>
     )
 }
