@@ -8,6 +8,7 @@
     scroll-behavior: smooth;
     gap: 1rem;
     width: 100vw;
+
 }
 .container::-webkit-scrollbar {
     width: 0px;
@@ -45,6 +46,6 @@
 }
 .label{
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--corTexto);
 }
