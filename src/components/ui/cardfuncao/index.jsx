@@ -1,4 +1,5 @@
 import styles from "./styles.module.css";
+import Img from "../img/img";
 
 export default function Cards({ funcionarios }) {
 
@@ -10,11 +11,11 @@ export default function Cards({ funcionarios }) {
     <div className={styles.divCards}>
       {funcionarios.map((funcionario, index) => (
         <div
-          key={index}
-          className={styles.card}
-        >
+        key={index}
+        className={styles.card}>
+
           {funcionario.img && (
-            <img className={styles.img} src={funcionario.img} alt="perfil" />
+            <Img src={funcionario.img} />
           )}
 
           <div className={`alinhamentoColumnCentro ${styles.container}`}>

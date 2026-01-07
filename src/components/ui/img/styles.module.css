@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.img{
+    box-shadow: var(--shadow-card);
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}

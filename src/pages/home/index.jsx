@@ -4,6 +4,7 @@ import logo from "../../img/logoClaro.png"
 import Cardstopo from "../../components/ui/cardtopo";
 import CardsPerfil from "../../components/ui/cardsuperior";
 import CardPrincipal from "../../components/ui/cardprincipal";
+import CardSaida from "../../components/ui/cardsaida";
 
 export default function Home() {
   const funcionarios = [
@@ -11,6 +12,13 @@ export default function Home() {
     { nome: "Maria Silva", funcao: "AJUDANTE", img: logo },
     { nome: "Carlos Pereira", funcao: "SUPERVISOR", img: logo },
   ];
+  const dados =[
+        {logo: logo, motorista: "Wilson Rodrigues", ajudate: "Juan", empresa: "Elis", destino: "São Paulo", veiculo: "VUC"},
+        {logo: logo, motorista: "Maria Silva", ajudate: "Kelli", empresa: "Elis", destino: "São Paulo", veiculo: "VUC"},
+        {logo: logo, motorista: "Maria Silva", ajudate: "Kelli", empresa: "Elis", destino: "São Paulo", veiculo: "VUC"},
+        {logo: logo, motorista: "Maria Silva", ajudate: "Kelli", empresa: "Elis", destino: "São Paulo", veiculo: "VUC"}
+
+  ]
 
   return (
     <div className={` alinhamentoColumnTop ${styles.div}`}>
@@ -27,7 +35,8 @@ export default function Home() {
         <span className={` ${styles.ver}`}>
           <label>Ultimas saidas</label>
           <label style={{ fontSize:"0.9rem"}}>Ver todas</label>
-        </span>        
+        </span> 
+        <CardSaida dados={dados} />    
     </div>
   );
 }

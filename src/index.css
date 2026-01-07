@@ -2,7 +2,8 @@
 
 
 :root {
-  flex-direction: column;
+  background-color: var(--background);
+  --logo: "./img/logoClaro.png";
   --shadow-card: 0 0 7px rgba(0, 0, 0, 0.2);
   --corTexto: #000000;
   --corTextoSecundaria: #969696;
@@ -13,19 +14,10 @@
   --active: #ffbf0f;
   --activeTexto: rgb(202, 202, 202); 
 }
-html,body{
-  width: 100vw;
-  min-height: 100vh;
-}
-.app {
-
-  display: flex;
-  flex: 1;
-  background: var(--backgroud);
-}
 
 [data-theme="dark"] {
-  
+  --logo: "../img/logoEscuro.png";
+   background-color: var(--background);
   --shadow-card: none;
   --background: #04102b;
   --corTexto: #FDFAFC;
@@ -49,12 +41,6 @@ html,body{
     align-items: center;
     flex-direction: row;
 }
-.alinhamentoColumnCentro{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 .alinhamentoRowTop{
   display: flex;
   justify-content: start;
@@ -66,6 +52,12 @@ html,body{
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
+}
+.alinhamentoColumnCentro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .alinhamentoColumnEsquerda {
   display: flex;

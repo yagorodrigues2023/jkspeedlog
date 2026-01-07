@@ -10,7 +10,6 @@ import styles from "./styles.module.css";
 export default function FormLogin(){
 
     const navigate = useNavigate();
-
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
 
