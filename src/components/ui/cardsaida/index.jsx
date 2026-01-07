@@ -25,7 +25,7 @@ export default function CardSaida({dados}){
                            <GiSteeringWheel className={styles.icon} />
                             <label className={styles.label}>{dados.motorista}</label>
                             </div>
-                            <label style={{fontSize: "0.7rem",
+                            <label style={{fontSize: "0.8rem",
     color: "var(--corPrimaria)" }} className={`${styles.label}`}>Detalhes</label>                    
                     </div>  
                                     
