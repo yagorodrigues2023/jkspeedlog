@@ -12,7 +12,11 @@
 /* Foto do funcionário */
 
 .container{
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
     margin-left: 1rem;
     margin-top: 1.5rem;
 }
@@ -24,14 +28,6 @@
     height: 60px;
     background-color: var(--corSecundaria);
  
-}
-.containerDireita{
-    margin-left: 50%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-direction: row;
-
 }
 .icon{
     color: var(--corTexto);

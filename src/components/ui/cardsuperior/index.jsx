@@ -7,17 +7,15 @@ export default function CardsPerfil({perfil})
  {
   return (
     <div className={styles.div}>
-      <div className={`alinhamentoRowEsquerda ${styles.container}`}>
+      <div className={`${styles.container}`}>
         <Img src={perfil}/>
-        <div className={`alinhamentoRowEsquerda ${styles.containerDireita}`}>
+        <div className={`alinhamentoRowEsquerda`}>
           <div className={`alinhamentoColumnCentro ${styles.containerCirculo}`} >
               <FaPlus className={styles.icon} />
           </div>
           <div className={`alinhamentoColumnCentro ${styles.containerCirculo}`} >
-              <IoMdNotifications className={styles.icon} />
-            
+              <IoMdNotifications className={styles.icon} /> 
           </div>
-
         </div>
 
       </div>
