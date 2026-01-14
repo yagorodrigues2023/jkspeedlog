@@ -17,7 +17,6 @@
     align-items: center;
     flex-direction: row;
     width: 90%;
-    margin-left: 1rem;
     margin-top: 1.5rem;
 }
 .containerCirculo{
@@ -28,6 +27,9 @@
     height: 60px;
     background-color: var(--corSecundaria);
  
+}
+.container :nth-last-of-type(1) :active{
+    opacity: 0.5;
 }
 .icon{
     color: var(--corTexto);

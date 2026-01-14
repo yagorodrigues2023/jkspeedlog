@@ -2,7 +2,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import styles from "./styles.module.css";
 import { useState } from "react";
 
-export default function Input({label , type='text', value, onChange, placeholder, error, ...rest
+export default function Input({marginButom,fontweight,fontsize ,label , type='text', value, onChange, placeholder, error, ...rest
 }){
     const [showPassword, setShowPassword] = useState(false);
     const togglePassword = () => setShowPassword(!showPassword);
@@ -10,9 +10,16 @@ export default function Input({label , type='text', value, onChange, placeholder
 
     return(
         <div className={`alinhamentoColumnEsquerda ${styles.container}`}>
-            {label && <label className={styles.label} >{label}</label>}
+            {label && <label
+            className={styles.label} 
+            style={{ 
+               ...(fontsize && {fontSize: fontsize}),
+               ...(fontweight && {fontWeight: fontweight})
+            }}
+             >{label}</label>}
+
             <div className={styles.container_input} >
-            <input className={styles.input}
+            <input style={(marginButom && {marginBottom: marginButom})} className={styles.input}
             type={type === 'password' ? (showPassword ? 'text' : 'password') :  {type} }
             value={value}
             onChange={onChange}

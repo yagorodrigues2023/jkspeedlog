@@ -1,6 +1,11 @@
 import { NavLink } from "react-router-dom";
 import { GoHome } from "react-icons/go";
+import { MdPersonOutline } from "react-icons/md";
+import { MdOutlineAttachMoney } from "react-icons/md";
+import { FaPlus } from "react-icons/fa6";
+import { HiOutlineClipboardList } from "react-icons/hi";
 import styles from "./styles.module.css"
+
 
 export default function BottomNav() {
     
@@ -19,7 +24,7 @@ export default function BottomNav() {
   </NavLink>
 
   <NavLink
-    to="/relatorios"
+    to="/faturamento"
         className={({ isActive }) =>
   isActive
     ? `${styles.navItem} ${styles.active}`
@@ -27,8 +32,23 @@ export default function BottomNav() {
 }
 
   >
-    <GoHome />
+    <MdOutlineAttachMoney />
   </NavLink>
+<div className={`alinhamentoRowCentro ${styles.plus}`}>
+    <NavLink style={{color:"var(--corSecundaria)"}} to="/new-frete">
+      <FaPlus />
+    </NavLink>
+</div>
+
+  <NavLink
+    to="/relatorios"
+        className={({ isActive }) =>
+  isActive
+    ? `${styles.navItem} ${styles.active}`
+    : styles.navItem}>
+    <HiOutlineClipboardList />
+  </NavLink>
+  
 
   <NavLink
     to="/perfil"
@@ -39,7 +59,7 @@ export default function BottomNav() {
 }
 
   >
-    <GoHome />
+    <MdPersonOutline />
   </NavLink>
 </nav>
 
