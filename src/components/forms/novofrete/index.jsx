@@ -1,13 +1,16 @@
 import styles from "./styles.module.css";
-import logo from "../../../../src/img/logoClaro.png";
-import CardsPerfil from "../../ui/cardsuperior";
-import DropList from "../../ui/droplist";
+import {DropList,DropListNew} from "../../ui/droplist";
 import Input from "../../ui/input";
 import { useState } from "react";
+import Button from "../../ui/butom";
 
 
 
-export default function FormFrete (){
+export default function FormFrete(){
+
+    const empresas = {
+        data: ["Elis","Vouga","Dinis",]
+    }    
 
     const utilitarios = {
         data: ["VUC","Van","Fiorino","Moto",]
@@ -19,25 +22,38 @@ export default function FormFrete (){
 
     const ajudantes ={
         data: ["Juan","Kelli",'Lulio',"Yago","Claudio","Não"]
-    }    
+    }
     
     const [ motorista, setmotorista] = useState("");
+    const [ empresa, setEmpresa] = useState("");
     const [ rota, setRota] = useState("")
     const [ destino, setDestino] = useState("")
     const [ veiculo, setVeiculo] = useState("")
     const [ ajudante, setAjudante] = useState("")
     const [ placa, setPlaca] = useState("")
 
+
+    function enviar(e){
+    e.preventDefault();
+    let i = {motorista,rota,empresa,destino,veiculo,ajudante,placa}
+    console.log(i)
+}
+
+
     return(
-    <div className={` alinhamentoColumnTop ${styles.div}`}>
-        <CardsPerfil perfil={logo}/>
-        <form className={` alinhamentoColumnTop ${styles.form}`}>
+<form onSubmit={enviar}  className={` alinhamentoColumnTop ${styles.form}`}>
             <DropList label={"Motorista"}
                     sethook={setmotorista}
                     hook={motorista}
-                    dados={dados}
-                    
+                    dados={dados} 
             />
+
+            <DropList label={"Empresa"}
+                    sethook={setEmpresa}
+                    hook={empresa}
+                    dados={empresas} 
+            />
+
             <Input 
                 label="Placa"
                 type="text"
@@ -78,8 +94,12 @@ export default function FormFrete (){
                     sethook={setAjudante}
                     hook={ajudante}
                     dados={ajudantes}
-            />            
-        </form>           
-    </div>
+            /> 
+            <Button
+            borderRadius={"15px"}
+            height={"2.5rem"}
+            width={"80%"}
+            label={"Enviar"}/>    
+        </form>     
     )
 }

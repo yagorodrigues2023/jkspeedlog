@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.div {
+    box-sizing: border-box;
+    background-color: var(--background);
+    gap: 1rem;
+    width: 100vw;
+    height: 100vh;
+}
+.form{
+width: 100vw;
+
+}
+.icon {
+    color: var(--corPrimaria);
+    font-size: 1.1rem;
+}
+

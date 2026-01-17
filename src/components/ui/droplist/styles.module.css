@@ -49,3 +49,9 @@
     padding: 0.6rem 1rem;
     cursor: pointer;
 }
+.label{
+    color: var(--corTexto);
+    font-size:1.2rem;
+    width:90%;
+    
+    }

@@ -1,13 +1,13 @@
 import styles from "./styles.module.css";
 import BottomNav from "../../components/ui/navi";
-import FormFrete from "../../components/forms/formnovofrete";
+import FormPage from "../../components/forms/formpage";
 
 
 export default function NewFrete() {
 
   return (
     <div className={` alinhamentoColumnTop ${styles.div}`}>
-        <FormFrete/>
+        <FormPage/>
         <BottomNav/>
     </div>
   );
